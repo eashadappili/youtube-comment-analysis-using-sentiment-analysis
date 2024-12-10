@@ -1,7 +1,7 @@
-## Sentiment Analysis on Youtube Comments
+# Sentiment Analysis on Youtube Comments
 This project performs sentiment analysis on comments retrieved from a YouTube video using the Lexicon-based method. It leverages APIs and libraries to fetch, preprocess, filter, and analyze YouTube comments. A graphical representation of the sentiment distribution is provided.
 
-# Features
+## Features
 1. Fetch comments from any YouTube video using its URL.
 2. Clean and preprocess comments by removing URLs, special characters, and excessive whitespace.
 3. Filter out irrelevant comments based on text-to-emoji ratio.
@@ -9,7 +9,7 @@ This project performs sentiment analysis on comments retrieved from a YouTube vi
 5. Save comments and analysis results to text files.
 6. Visualize sentiment scores with matplotlib.
 
-# How It Works
+## How It Works
 1. Fetching YouTube Comments
 Uses the googleapiclient.discovery module to interact with the YouTube API.
 Retrieves the video metadata and comments.
@@ -27,17 +27,17 @@ Categorizes comments as Positive, Negative, Neutral, or Mixed.
 5. Visualization
 Visualizes sentiment distribution using matplotlib, Excel.
 
-# Prerequisites
+## Prerequisites
 1. googleapiclient
 2. re
 3. emoji
 4. vaderSentiment
 5. matplotlib
 
-# Install modules using pip:
+## Install modules using pip:
 pip install google-api-python-client emoji vaderSentiment matplotlib
 
-# Setup and Usage
+## Setup and Usage
 1. Get an API Key
 Obtain an API key from the Google Cloud Console.
 2. Run the Script
@@ -47,11 +47,11 @@ Replace the api_key variable in the script with your Google API key.
 python youtube_comments_analysis.py
 Enter the YouTube video URL when prompted.
 
-## Outputs
+# Outputs
 youtubecomments.txt: Contains the filtered comments.
 Sentiment Analysis Results: Displays sentiment scores and visualizations.
 
-# Sample Result
+## Sample Result
 Example of sentiment analysis results:
 
 Positive: 65%
